@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Google is Flooble",
+    "description": "Google is definatly Flooble!",
+    "version": "1.0",
+    "icons": {
+        "16": "images/GiF_16x16.png",
+        "48": "images/GiF_48x48.png",
+        "128": "images/GiF_128x128.png"
+    },
+    "content_scripts": [{
+        "matches": [
+            "*://*/*"
+        ],
+        "js": [
+            "content.js"
+        ],
+        "run_at": "document_end"
+    }]
+}
