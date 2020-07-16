@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "AlleHide",
+    "description": "Removes auctions with the same title and price with shipping.",
+    "version": "1.0",
+    "icons": {
+        "16": "images/alle_hide_16x16.png",
+        "48": "images/alle_hide_48x48.png",
+        "128": "images/alle_hide_128x128.png"
+    },
+    "content_scripts": [{
+        "matches": [
+            "*://allegro.pl/listing*"
+        ],
+        "js": [
+            "content.js"
+        ],
+        "run_at": "document_end"
+    }]
+}
